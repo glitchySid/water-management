@@ -1,0 +1,28 @@
+[package]
+name = "water-management"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+rust-version = "1.82"
+
+[[bin]]
+name = "water-management"
+harness = false
+
+[features]
+simulation = []
+
+[dependencies]
+esp-idf-hal = "0.47"
+esp-idf-svc = "0.53"
+log = "0.4"
+
+[build-dependencies]
+embuild = "0.33.5"
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true
+opt-level = "z"

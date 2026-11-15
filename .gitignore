@@ -1,0 +1,5 @@
+/target
+/.embuild
+/.espressif
+/sdkconfig
+/sdkconfig.old
